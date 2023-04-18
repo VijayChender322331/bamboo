@@ -1,9 +1,15 @@
-# https://docs.atlassian.com/bamboo-specs-docs/latest
----
-!include 'build/plan.yml'
----
-!include 'build/plan-permissions.yml'
----
-!include 'deployment/plan.yml'
----
-!include 'deployment/plan-permissions.yml'
+version: 2
+plan:
+  project-key: DEV
+  key: PLAN
+  name: My Plan
+
+stages:
+  - Stage 1:
+      jobs:
+        - Job 1
+
+Job 1:
+  tasks:
+    - script:
+        - echo 'Hello from YAML Specs'
