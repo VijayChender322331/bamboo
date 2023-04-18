@@ -1,8 +1,8 @@
 version: 2
 plan:
-  project-key: DEV
+  project-key: VIJ
   key: PLAN
-  name: My Plan
+  name: my plan
 
 stages:
   - Stage 1:
